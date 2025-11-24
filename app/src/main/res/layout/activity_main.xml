@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculateur d'Indice de Masse Grasse"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Taille -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taille (cm) :"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/etTaille"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Ex: 170"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_marginTop="4dp" />
+
+    <!-- Poids -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poids (kg) :"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/etPoids"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Ex: 70"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_marginTop="4dp" />
+
+    <!-- Âge -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Âge :"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Ex: 25"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_marginTop="4dp" />
+
+    <!-- Sexe -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sexe :"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_marginTop="16dp" />
+
+    <RadioGroup
+        android:id="@+id/rgSexe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/rbHomme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Homme"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rbFemme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Femme"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <!-- Bouton Calculer -->
+    <Button
+        android:id="@+id/btnCalculer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULER"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="24dp"
+        android:padding="12dp" />
+
+    <!-- Résultats -->
+    <TextView
+        android:id="@+id/tvResultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#2196F3"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvInterpretation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</LinearLayout>
